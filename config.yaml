@@ -1,0 +1,25 @@
+model:
+  name: HEBB1
+
+hebbian:
+  use:             False
+  learning_rate:   0.001
+  strategy:        
+    name:          WTA
+    arguments:     
+      topk:        1
+
+backprop:
+  epochs:        1
+  learning_rate: 0.001
+
+wandb:
+  project:     Hebbian
+  name:        Default
+
+dataset:
+  batch_size:  [16, 16]
+  num_workers: [0, 0]
+
+num_classes:       10
+
